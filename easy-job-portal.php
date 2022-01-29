@@ -18,6 +18,8 @@ if ( ! defined( 'ABSPATH' ) ) {
     exit;
 }
 
+require_once __DIR__ . '/vendor/autoload.php';
+
 /**
  * The main plugin class
  */
@@ -77,9 +79,9 @@ final class EasyJobPortal {
     public function init_plugin() {
 
         if ( is_admin() ) {
-
+            new EasyJob\Portal\Admin();
         } else {
-
+            // new EasyJobPortal\Frontend();
         }
 
     }

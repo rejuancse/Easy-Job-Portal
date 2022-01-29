@@ -1,6 +1,6 @@
 === Easy Job Portal ===
 Contributors: rejuancse
-Tags: job portal, career, job listing, job manager, job Portal
+Tags: job portal, career, job listing, job manager
 Requires at least: 5.0
 Tested up to: 5.7
 Requires PHP: 5.4.0
