@@ -1,0 +1,20 @@
+{
+    "name": "asus/wp-easy-job-portal",
+    "description": "Powerful & robust plugin to create a job Portal on your website in a Easy & elegant way.",
+    "type": "wordpress-plugin",
+    "license": "GPLv2",
+    "authors": [
+        {
+            "name": "rejuancse",
+            "email": "rejuancse@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "EasyJob\\Portal": "includes"
+        },
+        "files": []
+    }
+}
