@@ -1,0 +1,86 @@
+.wljp .error {
+    color: #a00;
+}
+.wljp .page-numbers {
+    background-color: #444444;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 4px 8px;
+    font-size: 1em;
+    transition: all 0.3s ease;
+}
+.wljp .page-numbers:hover {
+    background-color: #fff;
+    border: 1px solid #444444;
+    color: #444444;
+    text-decoration: none;
+}
+.wljp span.page-numbers.current {
+    background-color: #fff;
+    border: 1px solid #444444;
+    color: #444444;
+    text-decoration: none;
+}
+.wljp .wljp-search-button i {
+    padding: 0 8px;
+}
+#wljp_job_portal_shortcode_copy, #wljp_job_portal_account_shortcode_copy {
+    cursor: pointer;
+    color: green;
+}
+.wljp .wljp-search-button {
+    cursor: pointer;
+}
+.wljp .fs-wrap {
+    width: 100%;
+}
+.wljp .employee_remove_label {
+    color: #f03;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+.wljp .wljp-stats-item {
+    height: 7.5rem;
+    color: #444;
+    background-color: #fff;
+    border: 1px solid #adadad;
+    padding-left: .8rem;
+    padding-right: 1rem;
+}
+.wljp .wljp-stats-icon {
+    font-size: 2.8rem;
+}
+.wljp .wljp-stats-count {
+    font-size: 1.7rem;
+}
+.wljp .wljp-stats-title {
+    font-size: 1rem;
+    margin-top: .8rem;
+}
+.wljp a.wljp-stats-item-link:link, .wljp a.wljp-stats-item-link:visited, .wljp .wljp-recent-item-left > a:link, .wljp .wljp-recent-item-left > a:visited {
+    text-decoration: none;
+    color: #444;
+}
+.wljp a.wljp-stats-item-link:hover, .wljp .wljp-recent-item-left > a:hover {
+    color: #007bff;
+}
+.wljp .wljp-recent-list-title {
+    background-color: #fff;
+    color: #444;
+    padding: .8rem;
+    border-top: 1px solid #adadad;
+    border-left: 1px solid #adadad;
+    border-right: 1px solid #adadad;
+    font-size: 1.1rem
+}
+.wljp .wljp-recent-list {
+    border: 1px solid #adadad;
+}
+.wljp .wljp-recent-activities-heading {
+    border: 1px solid #adadad;
+    background-color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: .8rem;
+    padding: .75rem;
+}

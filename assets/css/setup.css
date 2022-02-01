@@ -1,0 +1,123 @@
+.help-page-link {
+    cursor: help
+}
+
+.easy-job-portal-setup-steps {
+    margin: 1em 0 2em;
+    overflow: hidden
+}
+
+.easy-job-portal-setup-steps li {
+    width: 32.7%;
+    padding: 10px 15px;
+    font-weight: 700;
+    margin: 0;
+    color: #eee;
+    background: #222;
+    float: left;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.wrap.wp_easy_job_portal.wp_easy_job_portal_addons_wrap h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    padding: 25px 0 10px 0;
+    line-height: 1.3;
+}
+.easy-job-portal-setup-steps li:first-child {
+    margin-left: 0
+}
+
+.easy-job-portal-setup-steps li.easy-job-portal-setup-active-step {
+    background: #0074a2;
+    color: #eee
+}
+
+.easy-job-portal-shortcodes td,
+.easy-job-portal-shortcodes th {
+    vertical-align: middle
+}
+
+.easy-job-portal-shortcodes td p,
+.easy-job-portal-shortcodes th p {
+    margin: 9px 0
+}
+
+.easy-job-portal-shortcodes tr:nth-child(even) td,
+.easy-job-portal-shortcodes tr:nth-child(even) th {
+    background: #f9f9f9
+}
+
+.easy-job-portal-next-steps {
+    font-size: 14px;
+    margin: 0
+}
+
+.easy-job-portal-support-the-plugin {
+    background: #fff;
+    padding: 2em;
+    margin: 2em 0
+}
+
+.easy-job-portal-support-the-plugin h3 {
+    margin-top: 0
+}
+
+.easy-job-portal-support-the-plugin ul {
+    margin-bottom: 0
+}
+
+.easy-job-portal-support-the-plugin li {
+    line-height: 2em;
+    font-size: 1.1em
+}
+
+.easy-job-portal-support-the-plugin li a {
+    text-decoration: none
+}
+
+.easy-job-portal-support-the-plugin li a:before {
+    font-family: dashicons;
+    font-size: 2em;
+    vertical-align: middle;
+    padding-right: .25em
+}
+
+.easy-job-portal-support-the-plugin li.icon-review a:before {
+    content: "\f155"
+}
+
+.easy-job-portal-support-the-plugin li.icon-localization a:before {
+    content: "\f319"
+}
+
+.easy-job-portal-support-the-plugin li.icon-code a:before {
+    content: "\f111"
+}
+
+.easy-job-portal-support-the-plugin li.icon-forum a:before {
+    content: "\f328"
+}
+
+.thanks-for-install {
+    font-size: 14px;
+}
+.easy-job-portal-next-steps li {
+    padding: 2px 0;
+    text-decoration: none;
+    list-style: none;
+}
+.easy-job-portal-next-steps li a{
+    text-decoration: none;
+}
+.wp-job-manager-support-the-plugin {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+}

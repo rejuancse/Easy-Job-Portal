@@ -1,0 +1,58 @@
+.wljp input[type=number], .wljp select.form-control:not([size]):not([multiple]) {
+	height: unset;
+	line-height: unset;
+}
+.wljp-signup-heading, .wljp-login-heading, .wljp-cv-heading, .wljp-company-heading, .wljp-account-heading {
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+.wljp-cv-section-heading {
+	font-size: 17px;
+	font-weight: 600;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.wljp .wljp-search-button {
+    cursor: pointer;
+}
+.wljp .fs-wrap {
+    width: 100%;
+}
+.wljp .employee_remove_label {
+    color: #f03;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+.wljp .wljp_row_add_more {
+	margin-top: 20px;
+	font-size: 1em;
+}
+.wljp-signup-heading ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.wljp-signup-heading ul li {
+	float: left;
+}
+.wljp-signup-heading li a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+.wljp-signup-heading li a.active {
+	color: #333;
+}
+.wljp-employee-key {
+	font-weight: bold;
+}
+.wljp-change-password-email {
+	display: none;
+}
+.wljp-recruiter-details ul li {
+	list-style: none;
+}
