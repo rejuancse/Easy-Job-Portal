@@ -9,15 +9,15 @@ class WL_JP_Employee {
 	 * @return void
 	 */
 	public static function add_meta_boxes() {
-	    add_meta_box( 'wljp_employee_account', __( 'Account Settings', DJP_DOMAIN ), array( 'WL_JP_Employee', 'account_html' ), 'employee', 'advanced' );
-	    add_meta_box( 'wljp_employee_personal', __( 'Personal', DJP_DOMAIN ), array( 'WL_JP_Employee', 'personal_html' ), 'employee', 'advanced' );
-	    add_meta_box( 'wljp_employee_document', __( 'Document', DJP_DOMAIN ), array( 'WL_JP_Employee', 'document_html' ), 'employee', 'side' );
-	    add_meta_box( 'wljp_employee_work_experience', __( 'Work Experience', DJP_DOMAIN ), array( 'WL_JP_Employee', 'work_experience_html' ), 'employee', 'advanced' );
-	    add_meta_box( 'wljp_employee_employment', __( 'Employment', DJP_DOMAIN ), array( 'WL_JP_Employee', 'employment_html' ), 'employee', 'advanced' );
-	    add_meta_box( 'wljp_employee_education', __( 'Education', DJP_DOMAIN ), array( 'WL_JP_Employee', 'education_html' ), 'employee', 'advanced' );
-	    add_meta_box( 'wljp_employee_skills', __( 'Skills', DJP_DOMAIN ), array( 'WL_JP_Employee', 'skills_html' ), 'employee', 'side' );
-	    add_meta_box( 'wljp_employee_certification', __( 'Certification', DJP_DOMAIN ), array( 'WL_JP_Employee', 'certification_html' ), 'employee', 'advanced' );
-	    add_meta_box( 'wljp_employee_desired_job', __( 'Desired Job Details', DJP_DOMAIN ), array( 'WL_JP_Employee', 'desired_job_html' ), 'employee', 'advanced' );
+	    add_meta_box( 'wljp_employee_account', __( 'Account Settings', EJP_DOMAIN ), array( 'WL_JP_Employee', 'account_html' ), 'employee', 'advanced' );
+	    add_meta_box( 'wljp_employee_personal', __( 'Personal', EJP_DOMAIN ), array( 'WL_JP_Employee', 'personal_html' ), 'employee', 'advanced' );
+	    add_meta_box( 'wljp_employee_document', __( 'Document', EJP_DOMAIN ), array( 'WL_JP_Employee', 'document_html' ), 'employee', 'side' );
+	    add_meta_box( 'wljp_employee_work_experience', __( 'Work Experience', EJP_DOMAIN ), array( 'WL_JP_Employee', 'work_experience_html' ), 'employee', 'advanced' );
+	    add_meta_box( 'wljp_employee_employment', __( 'Employment', EJP_DOMAIN ), array( 'WL_JP_Employee', 'employment_html' ), 'employee', 'advanced' );
+	    add_meta_box( 'wljp_employee_education', __( 'Education', EJP_DOMAIN ), array( 'WL_JP_Employee', 'education_html' ), 'employee', 'advanced' );
+	    add_meta_box( 'wljp_employee_skills', __( 'Skills', EJP_DOMAIN ), array( 'WL_JP_Employee', 'skills_html' ), 'employee', 'side' );
+	    add_meta_box( 'wljp_employee_certification', __( 'Certification', EJP_DOMAIN ), array( 'WL_JP_Employee', 'certification_html' ), 'employee', 'advanced' );
+	    add_meta_box( 'wljp_employee_desired_job', __( 'Desired Job Details', EJP_DOMAIN ), array( 'WL_JP_Employee', 'desired_job_html' ), 'employee', 'advanced' );
 	}
 
 	/**
@@ -42,25 +42,25 @@ class WL_JP_Employee {
 			<div class="row mt-2">
 				<div class="col-sm-6">
 					<?php if ( $username ) : ?>
-					<label><?php _e( 'Username', DJP_DOMAIN ); ?>:</label><br>
+					<label><?php _e( 'Username', EJP_DOMAIN ); ?>:</label><br>
 					<span><strong><?php echo esc_html($username); ?></strong></span>
 					<?php else : ?>
-					<label for="wljp_employee_account_username"><?php esc_html_e( 'Username', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_account_username"><?php esc_html_e( 'Username', EJP_DOMAIN ); ?>:</label>
 					<input type="text" name="employee_account_username" id="wljp_employee_account_username" class="widefat" value="<?php echo esc_attr($username); ?>" required>
 					<?php endif; ?>
 				</div>
 				<div class="col-sm-6">
-					<label for="wljp_employee_account_email"><?php esc_html_e( 'Email Address', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_account_email"><?php esc_html_e( 'Email Address', EJP_DOMAIN ); ?>:</label>
 					<input type="email" name="employee_account_email" id="wljp_employee_account_email" class="widefat" value="<?php echo esc_attr($email); ?>" required>
 				</div>
 			</div>
 			<div class="row mt-2">
 				<div class="col-sm-6">
-					<label for="wljp_employee_account_password"><?php esc_html_e( 'Password', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_account_password"><?php esc_html_e( 'Password', EJP_DOMAIN ); ?>:</label>
 					<input type="password" name="employee_account_password" id="wljp_employee_account_password" class="widefat">
 				</div>
 				<div class="col-sm-6">
-					<label for="wljp_employee_account_confirm_password"><?php esc_html_e( 'Confirm Password', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_account_confirm_password"><?php esc_html_e( 'Confirm Password', EJP_DOMAIN ); ?>:</label>
 					<input type="password" name="employee_account_confirm_password" id="wljp_employee_account_confirm_password" class="widefat">
 				</div>
 			</div>
@@ -87,28 +87,28 @@ class WL_JP_Employee {
 			<div class="row">
 				<?php if ( $name ) : ?>
 				<div class="col-sm-6">
-					<label><?php esc_html_e( 'Name', DJP_DOMAIN ); ?>:</label><br>
+					<label><?php esc_html_e( 'Name', EJP_DOMAIN ); ?>:</label><br>
 					<span><?php echo esc_html($name); ?></span>
 				</div>
 				<?php endif; ?>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_personal_email"><?php esc_html_e( 'Email Address', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_personal_email"><?php esc_html_e( 'Email Address', EJP_DOMAIN ); ?>:</label>
 					<input type="email" name="employee_personal_email" id="wljp_employee_personal_email" class="widefat" value="<?php echo esc_attr($email); ?>" required>
 				</div>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_personal_mobile"><?php esc_html_e( 'Mobile', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_personal_mobile"><?php esc_html_e( 'Mobile', EJP_DOMAIN ); ?>:</label>
 					<input type="text" name="employee_personal_mobile" id="wljp_employee_personal_mobile" class="widefat" value="<?php echo esc_attr($mobile); ?>">
 				</div>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_personal_date_of_birth"><?php esc_html_e( 'Date of Birth', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_personal_date_of_birth"><?php esc_html_e( 'Date of Birth', EJP_DOMAIN ); ?>:</label>
 					<input type="date" name="employee_personal_date_of_birth" id="wljp_employee_personal_date_of_birth" class="widefat" value="<?php echo esc_attr($date_of_birth); ?>">
 				</div>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_personal_location"><?php esc_html_e( 'Location', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_personal_location"><?php esc_html_e( 'Location', EJP_DOMAIN ); ?>:</label>
 					<input type="text" name="employee_personal_location" id="wljp_employee_personal_location" class="widefat" value="<?php echo esc_attr($location); ?>">
 				</div>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_personal_gender"><?php esc_html_e( 'Gender', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_personal_gender"><?php esc_html_e( 'Gender', EJP_DOMAIN ); ?>:</label>
 					<select name="employee_personal_gender" id="wljp_employee_personal_gender" class="widefat">
 					<?php foreach( WL_JP_Helper::get_gender_list() as $key => $value ) : ?>
 						<option <?php selected( $key, $gender ); ?> value="<?php echo esc_attr($key); ?>"><?php echo esc_html($value); ?></option>
@@ -133,15 +133,15 @@ class WL_JP_Employee {
 	?>
 		<div class="wljp" id="wljp_employee_document">
 			<?php if ( ! empty ( $document_cv ) ) { ?>
-				<a href="<?php echo wp_get_attachment_url( $document_cv ); ?>" target="_blank" class="font-weight-bold"><?php esc_html_e( 'Latest CV', DJP_DOMAIN );
+				<a href="<?php echo wp_get_attachment_url( $document_cv ); ?>" target="_blank" class="font-weight-bold"><?php esc_html_e( 'Latest CV', EJP_DOMAIN );
 						if ( ! empty( $document_latest_cv_date ) ) {
-							echo " " . esc_html__( 'uploaded on', DJP_DOMAIN ) . " " . date_format( date_create( $document_latest_cv_date ), "d-m-Y" );
+							echo " " . esc_html__( 'uploaded on', EJP_DOMAIN ) . " " . date_format( date_create( $document_latest_cv_date ), "d-m-Y" );
 						} ?>
 				</a>
 			<?php } ?>
             <div class="row mt-2">
 				<div class="form-group col-sm-12">
-                    <label for="wljp_employee_document_cv" class="col-form-label"><?php esc_html_e( 'CV in PDF, DOC or DOCX format', DJP_DOMAIN ); ?>:</label><br>
+                    <label for="wljp_employee_document_cv" class="col-form-label"><?php esc_html_e( 'CV in PDF, DOC or DOCX format', EJP_DOMAIN ); ?>:</label><br>
                     <input name="employee_document_cv" type="file" id="wljp_employee_document_cv" class="w-100 d-block col">
 				</div>
 			</div>
@@ -171,15 +171,15 @@ class WL_JP_Employee {
 		<div class="wljp" id="wljp_employee_work_experience">
 			<div class="row">
 				<div class="col-sm-12 mt-2">
-					<label for="wljp_employee_work_experience_profile_title"><?php esc_html_e( 'Profile Title', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_work_experience_profile_title"><?php esc_html_e( 'Profile Title', EJP_DOMAIN ); ?>:</label>
 					<input type="text" name="employee_work_experience_profile_title" id="wljp_employee_work_experience_profile_title" class="widefat" value="<?php echo esc_attr($profile_title); ?>">
 				</div>
 				<div class="col-sm-12 mt-2">
-					<label for="wljp_employee_work_experience_profile_summary"><?php esc_html_e( 'Profile Summary', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_work_experience_profile_summary"><?php esc_html_e( 'Profile Summary', EJP_DOMAIN ); ?>:</label>
 					<input type="text" name="employee_work_experience_profile_summary" id="wljp_employee_work_experience_profile_summary" class="widefat" value="<?php echo esc_attr($profile_summary); ?>">
 				</div>
 				<div class="col-sm-12 mt-2">
-					<label for="wljp_employee_work_experience_total_experience"><?php esc_html_e( 'Total Experience', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_work_experience_total_experience"><?php esc_html_e( 'Total Experience', EJP_DOMAIN ); ?>:</label>
 				</div>
 				<div class="col-sm-6">
 					<select name="employee_work_experience_total_experience[year]" id="wljp_employee_work_experience_total_experience_year" class="widefat">
@@ -196,11 +196,11 @@ class WL_JP_Employee {
 					</select>
 				</div>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_work_experience_salary"><?php esc_html_e( 'Current / Latest Annual Salary', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_work_experience_salary"><?php esc_html_e( 'Current / Latest Annual Salary', EJP_DOMAIN ); ?>:</label>
 					<input type="text" name="employee_work_experience_salary" id="wljp_employee_work_experience_salary" class="widefat" value="<?php echo esc_attr($salary); ?>">
 				</div>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_work_experience_notice_period"><?php esc_html_e( 'Notice Period', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_work_experience_notice_period"><?php esc_html_e( 'Notice Period', EJP_DOMAIN ); ?>:</label>
 					<select name="employee_work_experience_notice_period" id="wljp_employee_work_experience_notice_period" class="widefat">
 					<?php foreach( WL_JP_Helper::notice_period_list() as $key => $value ) : ?>
 						<option <?php selected( $key, $notice_period ); ?> value="<?php echo esc_attr($key); ?>"><?php echo esc_html($value); ?></option>
@@ -211,7 +211,7 @@ class WL_JP_Employee {
 					<div class="row">
 						<div class="col-md-6"></div>
 						<div class="col-md-6">
-							<label for="wljp_employee_work_experience_last_working_day"><?php esc_html_e( 'Last working day', DJP_DOMAIN ); ?>:</label>
+							<label for="wljp_employee_work_experience_last_working_day"><?php esc_html_e( 'Last working day', EJP_DOMAIN ); ?>:</label>
 							<input type="date" name="employee_work_experience_last_working_day" id="wljp_employee_work_experience_last_working_day" class="widefat" value="<?php echo esc_attr($last_working_day); ?>">
 						</div>
 					</div>
@@ -244,15 +244,15 @@ class WL_JP_Employee {
 				<div class="row wljp_employee_employment_row mt-2">
 					<div class="col-sm-12 mt-2">
 						<span class="employee_employment_remove_label employee_remove_label">X</span>
-						<label><?php esc_html_e( 'Job Title', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Job Title', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_employment_job_title[]" class="widefat" value="<?php echo esc_attr($job_title); ?>">
 					</div>
 					<div class="col-sm-6 mt-2">
-						<label><?php esc_html_e( 'Company Name', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Company Name', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_employment_company_name[]" class="widefat" value="<?php echo esc_attr($company_name); ?>">
 					</div>
 					<div class="col-sm-6 mt-2">
-						<label><?php esc_html_e( 'Industry', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Industry', EJP_DOMAIN ); ?>:</label>
 						<select name="employee_employment_industry[]" class="widefat">
 						<?php foreach( WL_JP_Helper::industries() as $key => $value ) : ?>
 							<option <?php selected( $key, $industry, true ); ?> value="<?php echo esc_attr($key); ?>"><?php echo esc_html($value); ?></option>
@@ -260,11 +260,11 @@ class WL_JP_Employee {
 						</select>
 					</div>
 					<div class="col-md-6 mt-2">
-						<label><?php esc_html_e( 'Duration from', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Duration from', EJP_DOMAIN ); ?>:</label>
 						<input type="date" name="employee_employment_duration_from[]" class="widefat" value="<?php echo esc_attr($duration_from); ?>">
 					</div>
 					<div class="col-md-6 mt-2">
-						<label><?php esc_html_e( 'Duration to', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Duration to', EJP_DOMAIN ); ?>:</label>
 						<input type="date" name="employee_employment_duration_to[]" class="widefat" value="<?php echo esc_attr($duration_to); ?>">
 					</div>
 				</div>
@@ -273,15 +273,15 @@ class WL_JP_Employee {
 				<div class="row wljp_employee_employment_row mt-2">
 					<div class="col-sm-12 mt-2">
 						<span class="employee_employment_remove_label employee_remove_label">X</span>
-						<label><?php esc_html_e( 'Job Title', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Job Title', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_employment_job_title[]" class="widefat">
 					</div>
 					<div class="col-sm-6 mt-2">
-						<label><?php esc_html_e( 'Company Name', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Company Name', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_employment_company_name[]" class="widefat">
 					</div>
 					<div class="col-sm-6 mt-2">
-						<label><?php esc_html_e( 'Industry', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Industry', EJP_DOMAIN ); ?>:</label>
 						<select name="employee_employment_industry" class="widefat">
 						<?php foreach( WL_JP_Helper::industries() as $key => $value ) : ?>
 							<option value="<?php echo esc_attr($key); ?>"><?php echo esc_html($value); ?></option>
@@ -289,17 +289,17 @@ class WL_JP_Employee {
 						</select>
 					</div>
 					<div class="col-md-6 mt-2">
-						<label><?php esc_html_e( 'Duration from', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Duration from', EJP_DOMAIN ); ?>:</label>
 						<input type="date" name="employee_employment_duration_from" class="widefat">
 					</div>
 					<div class="col-md-6 mt-2">
-						<label><?php esc_html_e( 'Duration to', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Duration to', EJP_DOMAIN ); ?>:</label>
 						<input type="date" name="employee_employment_duration_to" class="widefat">
 					</div>
 				</div>
 				<?php endif; ?>
 			</div>
-			<button type="button" id="wljp_employee_employment_row_add_more" class="wljp_row_add_more"><?php esc_html_e( 'Add more', DJP_DOMAIN ); ?></button>
+			<button type="button" id="wljp_employee_employment_row_add_more" class="wljp_row_add_more"><?php esc_html_e( 'Add more', EJP_DOMAIN ); ?></button>
 		</div>
 	<?php
 	}
@@ -326,15 +326,15 @@ class WL_JP_Employee {
 				<div class="row wljp_employee_education_row">
 					<div class="col-sm-6 mt-2">
 						<span class="employee_education_remove_label employee_remove_label">X</span>
-						<label><?php esc_html_e( 'Education Specialization', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Education Specialization', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_education_specialization[]" class="widefat" value="<?php echo esc_attr($specialization); ?>">
 					</div>
 					<div class="col-sm-6 mt-2">
-						<label><?php esc_html_e( 'Institute Name', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Institute Name', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_education_institute_name[]" class="widefat" value="<?php echo esc_attr($institute_name); ?>">
 					</div>
 					<div class="col-sm-6 mt-2">
-						<label><?php esc_html_e( 'Course Type', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Course Type', EJP_DOMAIN ); ?>:</label>
 						<select name="employee_education_course_type[]" class="widefat">
 						<?php foreach( WL_JP_Helper::course_types() as $key => $value ) : ?>
 							<option <?php selected( $key, $course_type, true ); ?> value="<?php echo esc_attr($key); ?>"><?php echo esc_html($value); ?></option>
@@ -342,8 +342,8 @@ class WL_JP_Employee {
 						</select>
 					</div>
 					<div class="col-sm-6 mt-2">
-						<label><?php esc_html_e( 'Year of Passing', DJP_DOMAIN ); ?>:</label>
-						<input type="text" name="employee_education_year_of_passing[]" class="widefat" placeholder="<?php _e( 'Format: XXXX', DJP_DOMAIN ); ?>" value="<?php echo esc_html($year_of_passing); ?>">
+						<label><?php esc_html_e( 'Year of Passing', EJP_DOMAIN ); ?>:</label>
+						<input type="text" name="employee_education_year_of_passing[]" class="widefat" placeholder="<?php _e( 'Format: XXXX', EJP_DOMAIN ); ?>" value="<?php echo esc_html($year_of_passing); ?>">
 					</div>
 				</div>
 					<?php endforeach;
@@ -351,15 +351,15 @@ class WL_JP_Employee {
 				<div class="row wljp_employee_education_row">
 					<div class="col-sm-6 mt-2">
 						<span class="employee_education_remove_label employee_remove_label">X</span>
-						<label><?php esc_html_e( 'Education Specialization', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Education Specialization', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_education_specialization[]" class="widefat">
 					</div>
 					<div class="col-sm-6 mt-2">
-						<label><?php esc_html_e( 'Institute Name', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Institute Name', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_education_institute_name[]" class="widefat">
 					</div>
 					<div class="col-sm-6 mt-2">
-						<label><?php esc_html_e( 'Course Type', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Course Type', EJP_DOMAIN ); ?>:</label>
 						<select name="employee_education_course_type" class="widefat">
 						<?php foreach( WL_JP_Helper::course_types() as $key => $value ) : ?>
 							<option value="<?php echo esc_html($key); ?>"><?php echo esc_html($value); ?></option>
@@ -367,13 +367,13 @@ class WL_JP_Employee {
 						</select>
 					</div>
 					<div class="col-sm-6 mt-2">
-						<label><?php _e( 'Year of Passing', DJP_DOMAIN ); ?>:</label>
-						<input type="text" name="employee_education_year_of_passing[]" class="widefat" placeholder="<?php esc_attr_e( 'Format: XXXX', DJP_DOMAIN ); ?>">
+						<label><?php _e( 'Year of Passing', EJP_DOMAIN ); ?>:</label>
+						<input type="text" name="employee_education_year_of_passing[]" class="widefat" placeholder="<?php esc_attr_e( 'Format: XXXX', EJP_DOMAIN ); ?>">
 					</div>
 				</div>
 				<?php endif; ?>
 			</div>
-			<button type="button" id="wljp_employee_education_row_add_more" class="wljp_row_add_more"><?php esc_html_e( 'Add more', DJP_DOMAIN ); ?></button>
+			<button type="button" id="wljp_employee_education_row_add_more" class="wljp_row_add_more"><?php esc_html_e( 'Add more', EJP_DOMAIN ); ?></button>
 		</div>
 	<?php
 	}
@@ -395,7 +395,7 @@ class WL_JP_Employee {
 				<div class="row wljp_employee_skills_row">
 					<div class="col-sm-12 mt-2">
 						<span class="employee_skills_remove_label employee_remove_label">X</span>
-						<label><?php esc_html_e( 'Skill', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Skill', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_skills[]" class="widefat" value="<?php echo esc_attr( $value ); ?>">
 					</div>
 				</div>
@@ -404,13 +404,13 @@ class WL_JP_Employee {
 				<div class="row wljp_employee_skills_row">
 					<div class="col-sm-12 mt-2">
 						<span class="employee_skills_remove_label employee_remove_label">X</span>
-						<label><?php esc_html_e( 'Skill', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Skill', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_skills[]" class="widefat">
 					</div>
 				</div>
 				<?php endif; ?>
 			</div>
-			<button type="button" id="wljp_employee_skills_row_add_more" class="wljp_row_add_more"><?php esc_html_e( 'Add more', DJP_DOMAIN ); ?></button>
+			<button type="button" id="wljp_employee_skills_row_add_more" class="wljp_row_add_more"><?php esc_html_e( 'Add more', EJP_DOMAIN ); ?></button>
 		</div>
 	<?php
 	}
@@ -435,12 +435,12 @@ class WL_JP_Employee {
 				<div class="row wljp_employee_certification_row">
 					<div class="col-sm-8 mt-2">
 						<span class="employee_certification_remove_label employee_remove_label">X</span>
-						<label><?php esc_html_e( 'Certification Title', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Certification Title', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_certification_title[]" class="widefat" value="<?php echo esc_attr( $certification_title ); ?>">
 					</div>
 					<div class="col-sm-4 mt-2">
-						<label><?php esc_html_e( 'Year of Certification', DJP_DOMAIN ); ?>:</label>
-						<input type="number" step="1" name="employee_certification_year[]" class="widefat" placeholder="<?php esc_attr_e( 'Format: XXXX', DJP_DOMAIN ); ?>" value="<?php echo esc_attr( $year_of_certification ); ?>">
+						<label><?php esc_html_e( 'Year of Certification', EJP_DOMAIN ); ?>:</label>
+						<input type="number" step="1" name="employee_certification_year[]" class="widefat" placeholder="<?php esc_attr_e( 'Format: XXXX', EJP_DOMAIN ); ?>" value="<?php echo esc_attr( $year_of_certification ); ?>">
 					</div>
 				</div>
 					<?php endforeach;
@@ -448,17 +448,17 @@ class WL_JP_Employee {
 				<div class="row wljp_employee_certification_row">
 					<div class="col-sm-8 mt-2">
 						<span class="employee_certification_remove_label employee_remove_label">X</span>
-						<label><?php esc_html_e( 'Certification Title', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Certification Title', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="employee_certification_title[]" class="widefat">
 					</div>
 					<div class="col-sm-4 mt-2">
-						<label><?php esc_html_e( 'Year of Certification', DJP_DOMAIN ); ?>:</label>
+						<label><?php esc_html_e( 'Year of Certification', EJP_DOMAIN ); ?>:</label>
 						<input type="number" step="1" name="employee_certification_year[]" class="widefat">
 					</div>
 				</div>
 				<?php endif; ?>
 			</div>
-			<button type="button" id="wljp_employee_certification_row_add_more" class="wljp_row_add_more"><?php esc_html_e( 'Add more', DJP_DOMAIN ); ?></button>
+			<button type="button" id="wljp_employee_certification_row_add_more" class="wljp_row_add_more"><?php esc_html_e( 'Add more', EJP_DOMAIN ); ?></button>
 		</div>
 	<?php
 	}
@@ -482,11 +482,11 @@ class WL_JP_Employee {
 		<div class="wljp" id="wljp_employee_desired_job">
 			<div class="row">
 				<div class="col-sm-12 mt-2">
-					<label for="wljp_employee_desired_job_locations"><?php esc_html_e( 'Job Locations', DJP_DOMAIN ); ?>:</label>
-					<input type="text" name="employee_desired_job_locations" id="wljp_employee_desired_job_locations" class="widefat" value="<?php echo esc_attr($locations_string); ?>" placeholder="<?php esc_attr_e( 'Separated by comma', DJP_DOMAIN ); ?>">
+					<label for="wljp_employee_desired_job_locations"><?php esc_html_e( 'Job Locations', EJP_DOMAIN ); ?>:</label>
+					<input type="text" name="employee_desired_job_locations" id="wljp_employee_desired_job_locations" class="widefat" value="<?php echo esc_attr($locations_string); ?>" placeholder="<?php esc_attr_e( 'Separated by comma', EJP_DOMAIN ); ?>">
 				</div>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_desired_job_industry"><?php esc_attr_e( 'Industry', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_desired_job_industry"><?php esc_attr_e( 'Industry', EJP_DOMAIN ); ?>:</label>
 					<select name="employee_desired_job_industry" id="wljp_employee_desired_job_industry" class="widefat">
 					<?php foreach( WL_JP_Helper::industries() as $key => $value ) : ?>
 						<option <?php selected( $key, $industry ); ?> value="<?php echo esc_attr($key); ?>"><?php echo esc_html($value); ?></option>
@@ -494,12 +494,12 @@ class WL_JP_Employee {
 					</select>
 				</div>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_desired_job_salary"><?php esc_html_e( 'Salary', DJP_DOMAIN ); ?>:</label>
+					<label for="wljp_employee_desired_job_salary"><?php esc_html_e( 'Salary', EJP_DOMAIN ); ?>:</label>
 					<input type="text" name="employee_desired_job_salary" id="wljp_employee_desired_job_salary" class="widefat" value="<?php echo esc_attr($salary); ?>">
 				</div>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_desired_job_departments"><?php esc_html_e( 'Departments', DJP_DOMAIN ); ?>:</label><br>
-					<select data-placeholder="<?php esc_attr_e( 'Select departments', DJP_DOMAIN ); ?>" name="employee_desired_job_departments[]" id="wljp_employee_desired_job_departments" class="widefat" multiple>
+					<label for="wljp_employee_desired_job_departments"><?php esc_html_e( 'Departments', EJP_DOMAIN ); ?>:</label><br>
+					<select data-placeholder="<?php esc_attr_e( 'Select departments', EJP_DOMAIN ); ?>" name="employee_desired_job_departments[]" id="wljp_employee_desired_job_departments" class="widefat" multiple>
 					<?php $department_array = WL_JP_Helper::departments();
 						foreach( $department_array as $key => $value ) : ?>
 						<option <?php selected( true, in_array( $key, $departments ), true ); ?> value="<?php echo esc_attr($key); ?>"><?php echo esc_html($value); ?></option>
@@ -507,8 +507,8 @@ class WL_JP_Employee {
 					</select>
 				</div>
 				<div class="col-sm-6 mt-2">
-					<label for="wljp_employee_desired_job_types"><?php esc_html_e( 'Job Types', DJP_DOMAIN ); ?>:</label>
-					<select data-placeholder="<?php esc_attr_e( 'Select job types', DJP_DOMAIN ); ?>" name="employee_desired_job_types[]" id="wljp_employee_desired_job_types" class="widefat" multiple>
+					<label for="wljp_employee_desired_job_types"><?php esc_html_e( 'Job Types', EJP_DOMAIN ); ?>:</label>
+					<select data-placeholder="<?php esc_attr_e( 'Select job types', EJP_DOMAIN ); ?>" name="employee_desired_job_types[]" id="wljp_employee_desired_job_types" class="widefat" multiple>
 					<?php $job_type_array = WL_JP_Helper::job_types();
 						foreach( $job_type_array as $key => $value ) : ?>
 						<option <?php selected( true, in_array( $key, $job_types ), true ); ?> value="<?php echo esc_attr($key); ?>"><?php echo esc_html($value); ?></option>
@@ -550,7 +550,7 @@ class WL_JP_Employee {
 	public static function change_title_text( $title ){
 		$screen = get_current_screen();
 		if  ( 'employee' == $screen->post_type ) {
-		  $title = esc_html__( 'Enter employee name', DJP_DOMAIN );
+		  $title = esc_html__( 'Enter employee name', EJP_DOMAIN );
 		}
 		return $title;
 	}
@@ -563,8 +563,8 @@ class WL_JP_Employee {
 	public static function set_columns( $columns ) {
 		$newColumns = array();
 		$newColumns['cb']    = $columns['cb'];
-		$newColumns['title'] = esc_html__( 'Employee Name', DJP_DOMAIN );
-		$newColumns['date'] = esc_html__( 'Date', DJP_DOMAIN );
+		$newColumns['title'] = esc_html__( 'Employee Name', EJP_DOMAIN );
+		$newColumns['date'] = esc_html__( 'Date', EJP_DOMAIN );
 		return $newColumns;
 	}
 

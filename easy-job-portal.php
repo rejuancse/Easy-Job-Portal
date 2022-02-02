@@ -10,8 +10,8 @@
 * @package easy-job-portal
 */
 
-if ( ! defined( 'DJP_DOMAIN' ) ) {
-    define( 'DJP_DOMAIN', 'easy-job-portal' );
+if ( ! defined( 'EJP_DOMAIN' ) ) {
+    define( 'EJP_DOMAIN', 'easy-job-portal' );
 }
 
 # Define

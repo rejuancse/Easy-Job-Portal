@@ -10,29 +10,29 @@ class WL_JP_Employee_Front {
 	 */
 	public static function register_candidate_post_type() {
 		$labels = array(
-			'name'                  => esc_html(_x( 'Employees', 'Post Type General Name', DJP_DOMAIN )),
-			'singular_name'         => esc_html(_x( 'Employee', 'Post Type Singular Name', DJP_DOMAIN )),
-			'menu_name'             => esc_html__( 'Employees', DJP_DOMAIN ),
-			'name_admin_bar'        => esc_html__( 'Employee', DJP_DOMAIN ),
-			'archives'              => esc_html__( 'Employee Archives', DJP_DOMAIN ),
-			'attributes'            => esc_html__( 'Employee Attributes', DJP_DOMAIN ),
-			'all_items'             => esc_html__( 'All Employees', DJP_DOMAIN ),
-			'add_new_item'          => esc_html__( 'Add New Employee', DJP_DOMAIN ),
-			'add_new'               => esc_html__( 'Add New', DJP_DOMAIN ),
-			'new_item'              => esc_html__( 'New Employee', DJP_DOMAIN ),
-			'edit_item'             => esc_html__( 'Edit Employee', DJP_DOMAIN ),
-			'update_item'           => esc_html__( 'Update Employee', DJP_DOMAIN ),
-			'view_item'             => esc_html__( 'View Employee', DJP_DOMAIN ),
-			'view_items'            => esc_html__( 'View Employees', DJP_DOMAIN ),
-			'search_items'          => esc_html__( 'Search Employee', DJP_DOMAIN ),
-			'not_found'             => esc_html__( 'Not found', DJP_DOMAIN ),
-			'not_found_in_trash'    => esc_html__( 'Not found in Trash', DJP_DOMAIN ),
-			'items_list'            => esc_html__( 'Employee list', DJP_DOMAIN ),
-			'items_list_navigation' => esc_html__( 'Employee list navigation', DJP_DOMAIN ),
-			'filter_items_list'     => esc_html__( 'Filter Employee list', DJP_DOMAIN ),
+			'name'                  => esc_html(_x( 'Employees', 'Post Type General Name', EJP_DOMAIN )),
+			'singular_name'         => esc_html(_x( 'Employee', 'Post Type Singular Name', EJP_DOMAIN )),
+			'menu_name'             => esc_html__( 'Employees', EJP_DOMAIN ),
+			'name_admin_bar'        => esc_html__( 'Employee', EJP_DOMAIN ),
+			'archives'              => esc_html__( 'Employee Archives', EJP_DOMAIN ),
+			'attributes'            => esc_html__( 'Employee Attributes', EJP_DOMAIN ),
+			'all_items'             => esc_html__( 'All Employees', EJP_DOMAIN ),
+			'add_new_item'          => esc_html__( 'Add New Employee', EJP_DOMAIN ),
+			'add_new'               => esc_html__( 'Add New', EJP_DOMAIN ),
+			'new_item'              => esc_html__( 'New Employee', EJP_DOMAIN ),
+			'edit_item'             => esc_html__( 'Edit Employee', EJP_DOMAIN ),
+			'update_item'           => esc_html__( 'Update Employee', EJP_DOMAIN ),
+			'view_item'             => esc_html__( 'View Employee', EJP_DOMAIN ),
+			'view_items'            => esc_html__( 'View Employees', EJP_DOMAIN ),
+			'search_items'          => esc_html__( 'Search Employee', EJP_DOMAIN ),
+			'not_found'             => esc_html__( 'Not found', EJP_DOMAIN ),
+			'not_found_in_trash'    => esc_html__( 'Not found in Trash', EJP_DOMAIN ),
+			'items_list'            => esc_html__( 'Employee list', EJP_DOMAIN ),
+			'items_list_navigation' => esc_html__( 'Employee list navigation', EJP_DOMAIN ),
+			'filter_items_list'     => esc_html__( 'Filter Employee list', EJP_DOMAIN ),
 		);
 		$args = array(
-			'label'                 => esc_html__( 'Employee', DJP_DOMAIN ),
+			'label'                 => esc_html__( 'Employee', EJP_DOMAIN ),
 			'labels'                => $labels,
 			'supports'              => array( 'title' ),
 			'hierarchical'          => false,
@@ -108,7 +108,7 @@ class WL_JP_Employee_Front {
 		$errors = array();
 
 		if ( empty( $personal_name ) ) {
-			$errors['candidate_personal_name'] = esc_html__( 'Please specify your name', DJP_DOMAIN );
+			$errors['candidate_personal_name'] = esc_html__( 'Please specify your name', EJP_DOMAIN );
 		}
 
 		if ( ! empty( $document_cv ) ) {
@@ -117,7 +117,7 @@ class WL_JP_Employee_Front {
 			$allowed_file_types = WL_JP_Helper::cv_document_file_types();
 
 			if ( ! in_array( $file_type, $allowed_file_types ) ) {
-				$errors['candidate_document_cv'] = esc_html__( 'Please provide CV in PDF, DOC or DOCX format.', DJP_DOMAIN );
+				$errors['candidate_document_cv'] = esc_html__( 'Please provide CV in PDF, DOC or DOCX format.', EJP_DOMAIN );
 			}
 		}
 
@@ -222,7 +222,7 @@ class WL_JP_Employee_Front {
 		update_post_meta( $post_id, 'wljp_candidate_certification', $certification );
 		update_post_meta( $post_id, 'wljp_candidate_desired_job', $desired_job );
 
-		wp_send_json_success( array( 'message' => esc_html__( 'Thank you for CV registration.', DJP_DOMAIN ), 'reload' => true ) );
+		wp_send_json_success( array( 'message' => esc_html__( 'Thank you for CV registration.', EJP_DOMAIN ), 'reload' => true ) );
 	}
 
 	/**
@@ -287,7 +287,7 @@ class WL_JP_Employee_Front {
 		$errors = array();
 
 		if ( empty( $personal_name ) ) {
-			$errors['candidate_personal_name'] = esc_html__( 'Please specify your name', DJP_DOMAIN );
+			$errors['candidate_personal_name'] = esc_html__( 'Please specify your name', EJP_DOMAIN );
 		}
 
 		if ( ! empty( $document_cv ) ) {
@@ -296,7 +296,7 @@ class WL_JP_Employee_Front {
 			$allowed_file_types = WL_JP_Helper::cv_document_file_types();
 
 			if ( ! in_array( $file_type, $allowed_file_types ) ) {
-				$errors['candidate_document_cv'] = esc_html__( 'Please provide CV in PDF, DOC or DOCX format.', DJP_DOMAIN );
+				$errors['candidate_document_cv'] = esc_html__( 'Please provide CV in PDF, DOC or DOCX format.', EJP_DOMAIN );
 			}
 		}
 
@@ -424,7 +424,7 @@ class WL_JP_Employee_Front {
 			wp_delete_attachment( $saved_document_cv, true );
 		}
 
-		wp_send_json_success( array( 'message' => esc_html__( 'Your CV has been updated.', DJP_DOMAIN ), 'reload' => true ) );
+		wp_send_json_success( array( 'message' => esc_html__( 'Your CV has been updated.', EJP_DOMAIN ), 'reload' => true ) );
 	}
 
 	/**
@@ -448,14 +448,14 @@ class WL_JP_Employee_Front {
 		$success = wp_delete_post( $cv->ID, true );
 
 		if ( ! $success ) {
-  			throw new Exception( esc_html__( 'An unexpected error occurred.', DJP_DOMAIN ) );
+  			throw new Exception( esc_html__( 'An unexpected error occurred.', EJP_DOMAIN ) );
 		}
 
 		if ( ! empty( $document_cv ) ) {
 			wp_delete_attachment( $document_cv, true );
 		}
 
-		wp_send_json_success( array( 'message' => esc_html__( 'Your CV has been deleted.', DJP_DOMAIN ), 'reload' => true ) );
+		wp_send_json_success( array( 'message' => esc_html__( 'Your CV has been deleted.', EJP_DOMAIN ), 'reload' => true ) );
 	}
 
 	/* Apply to job */
@@ -488,11 +488,11 @@ class WL_JP_Employee_Front {
 
 			$success = $wpdb->insert( "{$wpdb->prefix}wljp_candidate_job", $data );
 			if ( ! $success ) {
-				throw new Exception( esc_html__( 'An unexpected error occurred.', DJP_DOMAIN ) );
+				throw new Exception( esc_html__( 'An unexpected error occurred.', EJP_DOMAIN ) );
 			}
 			$wpdb->query( 'COMMIT;' );
 
-			wp_send_json_success( array( 'message' => esc_html__( 'You have applied.', DJP_DOMAIN ) ) );
+			wp_send_json_success( array( 'message' => esc_html__( 'You have applied.', EJP_DOMAIN ) ) );
 		} catch ( Exception $exception ) {
 			$wpdb->query( 'ROLLBACK;' );
 			wp_send_json_error( $exception->getMessage() );

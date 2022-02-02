@@ -12,7 +12,7 @@ class WL_JP_Menu {
 		$user_role = $roles[0];
 
 		if ( in_array( $user_role, $role_array ) ) {
-			$job_applications = add_submenu_page( 'edit.php?post_type=employee', esc_html__( 'Job Applications', DJP_DOMAIN ), esc_html__( 'Job Applications', DJP_DOMAIN ), $user_role, 'job_applications', array( 'WL_JP_Menu', 'job_applications' ) );
+			$job_applications = add_submenu_page( 'edit.php?post_type=employee', esc_html__( 'Job Applications', EJP_DOMAIN ), esc_html__( 'Job Applications', EJP_DOMAIN ), $user_role, 'job_applications', array( 'WL_JP_Menu', 'job_applications' ) );
 			add_action( 'admin_print_styles-' . $job_applications, array( 'WL_JP_Menu', 'job_applications_assets' ) );
 		}
 

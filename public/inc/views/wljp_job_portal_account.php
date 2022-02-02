@@ -20,12 +20,12 @@ if ( $is_user_logged_in ) {
 			<div class="float-right"> 
 				<div class="row">
 					<div class="col-sm-12 text-right wljp-job-portal-navigation">
-						<a href="<?php echo esc_url($job_portal_page_url); ?>" class="wljp-job-portal-link pr-3 mb-3 border-bottom">&#8594; <?php esc_html_e( 'Back to Job Portal', DJP_DOMAIN ); ?></a>
+						<a href="<?php echo esc_url($job_portal_page_url); ?>" class="wljp-job-portal-link pr-3 mb-3 border-bottom">&#8594; <?php esc_html_e( 'Back to Job Portal', EJP_DOMAIN ); ?></a>
 					</div>
 
 					<?php if ( $is_user_logged_in ) : ?> 
 						<div class="col-sm-12 text-right wljp-logout-navigation">
-							<a href="<?php echo wp_logout_url( $job_portal_page_url ); ?>" class="wljp-logout-link pr-3 pb-3"><?php esc_html_e( 'Logout', DJP_DOMAIN ); ?></a>
+							<a href="<?php echo wp_logout_url( $job_portal_page_url ); ?>" class="wljp-logout-link pr-3 pb-3"><?php esc_html_e( 'Logout', EJP_DOMAIN ); ?></a>
 						</div>
 					<?php endif; ?>
 				</div>

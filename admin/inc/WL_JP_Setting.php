@@ -5,7 +5,7 @@ require_once( EASY_JOB_PORTAL_PLUGIN_DIR_PATH . 'lib/WL_JP_Helper.php' );
 
 class WL_JP_Setting {
 	public static function add_settings_link( $links ) {
-	    $settings_link = '<a href="' . menu_page_url( 'job_portal_settings', false ) . '">' . esc_html__( 'Settings', DJP_DOMAIN ) . '</a>';
+	    $settings_link = '<a href="' . menu_page_url( 'job_portal_settings', false ) . '">' . esc_html__( 'Settings', EJP_DOMAIN ) . '</a>';
 	    array_push( $links, $settings_link );
 	  	return $links;
 	}
@@ -18,17 +18,17 @@ class WL_JP_Setting {
 
 		$settings_section_general = 'wljp_general';
 		/* Create section of page */
-		add_settings_section( $settings_section_general, esc_html__( 'General', DJP_DOMAIN ), '', $page );
+		add_settings_section( $settings_section_general, esc_html__( 'General', EJP_DOMAIN ), '', $page );
 
 		/* Add fields to section */
-		add_settings_field( 'wljp_general_jobs_per_page', esc_html__( 'Number of jobs per page', DJP_DOMAIN ), array( 'WL_JP_Setting', 'wljp_general_jobs_per_page_input' ), $page, $settings_section_general );
+		add_settings_field( 'wljp_general_jobs_per_page', esc_html__( 'Number of jobs per page', EJP_DOMAIN ), array( 'WL_JP_Setting', 'wljp_general_jobs_per_page_input' ), $page, $settings_section_general );
 
-		add_settings_field( 'wljp_general_admin_applications_per_page', esc_html__( 'Number of applications per page in admin panel', DJP_DOMAIN ), array( 'WL_JP_Setting', 'wljp_general_admin_applications_per_page_input' ), $page, $settings_section_general );
+		add_settings_field( 'wljp_general_admin_applications_per_page', esc_html__( 'Number of applications per page in admin panel', EJP_DOMAIN ), array( 'WL_JP_Setting', 'wljp_general_admin_applications_per_page_input' ), $page, $settings_section_general );
 
-		add_settings_field( 'wljp_general_employee_jobs_applied_per_page', esc_html__( 'Number of jobs applied per page in employee panel', DJP_DOMAIN ), array( 'WL_JP_Setting', 'wljp_general_employee_jobs_applied_per_page_input' ), $page, $settings_section_general );
+		add_settings_field( 'wljp_general_employee_jobs_applied_per_page', esc_html__( 'Number of jobs applied per page in employee panel', EJP_DOMAIN ), array( 'WL_JP_Setting', 'wljp_general_employee_jobs_applied_per_page_input' ), $page, $settings_section_general );
 
 
-		add_settings_field( 'wljp_general_account_page_id', esc_html__( 'Account Page', DJP_DOMAIN ) . '<br><span id="wljp_job_portal_account_shortcode">[job_portal_account]</span> <span id="wljp_job_portal_account_shortcode_copy">' . esc_html__( 'Copy', DJP_DOMAIN ) . '</span>', array( 'WL_JP_Setting', 'wljp_general_account_page_id_input' ), $page, $settings_section_general );
+		add_settings_field( 'wljp_general_account_page_id', esc_html__( 'Account Page', EJP_DOMAIN ) . '<br><span id="wljp_job_portal_account_shortcode">[job_portal_account]</span> <span id="wljp_job_portal_account_shortcode_copy">' . esc_html__( 'Copy', EJP_DOMAIN ) . '</span>', array( 'WL_JP_Setting', 'wljp_general_account_page_id_input' ), $page, $settings_section_general );
 	}
 
 	public static function wljp_general_jobs_per_page_input() {

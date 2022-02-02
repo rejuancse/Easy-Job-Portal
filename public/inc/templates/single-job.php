@@ -31,9 +31,9 @@ if ( $is_user_logged_in ) {
 					$maximum_salary = isset( $salary['maximum'] ) ? esc_attr( $salary['maximum'] ) : '';
 					$salary  = "{$minimum_salary} - $maximum_salary";
 				} elseif ( $type == 'negotiable' ) {
-					$salary = esc_html__( 'Negotiable', DJP_DOMAIN );
+					$salary = esc_html__( 'Negotiable', EJP_DOMAIN );
 				} elseif ( $type == 'fixed' ) {
-					$salary = esc_html__( 'Fixed', DJP_DOMAIN );
+					$salary = esc_html__( 'Fixed', EJP_DOMAIN );
 				} else {
 					$salary = '';
 				}
@@ -47,25 +47,25 @@ if ( $is_user_logged_in ) {
 				        </div>
 				    	<div class="col-sm-3">
 							<div class="col-sm-12 text-right wljp-job-portal-navigation wljp-navigation">
-								<a href="<?php echo esc_url($job_portal_page_url); ?>" class="wljp-navigation-link pr-3 mb-3 border-bottom">&#8594; <?php esc_html_e( 'Back to Job Portal', DJP_DOMAIN ); ?></a>
+								<a href="<?php echo esc_url($job_portal_page_url); ?>" class="wljp-navigation-link pr-3 mb-3 border-bottom">&#8594; <?php esc_html_e( 'Back to Job Portal', EJP_DOMAIN ); ?></a>
 							</div>
 							<?php 
 								if ( $is_user_logged_in ) : ?>
 								<?php if ( $employee ) : ?>
 									<div class="col-sm-12 text-right wljp-cv-navigation wljp-navigation">
-										<a href="<?php echo esc_url($account_page_url); ?>" class="wljp-navigation-link pr-3 mb-3 border-bottom"><?php esc_html_e( 'Your CV', DJP_DOMAIN ); ?></a>
+										<a href="<?php echo esc_url($account_page_url); ?>" class="wljp-navigation-link pr-3 mb-3 border-bottom"><?php esc_html_e( 'Your CV', EJP_DOMAIN ); ?></a>
 									</div>
 									<?php else: ?>
 									<div class="col-sm-12 text-right wljp-cv-navigation wljp-navigation">
-										<a href="<?php echo esc_url($account_page_url); ?>" class="wljp-navigation-link pr-3 mb-3 border-bottom"><?php esc_html_e( 'Register CV', DJP_DOMAIN ); ?></a>
+										<a href="<?php echo esc_url($account_page_url); ?>" class="wljp-navigation-link pr-3 mb-3 border-bottom"><?php esc_html_e( 'Register CV', EJP_DOMAIN ); ?></a>
 									</div>
 								<?php endif; ?>
 							<div class="col-sm-12 text-right wljp-logout-navigation wljp-navigation">
-								<a href="<?php echo wp_logout_url( $wp->request ); ?>" class="wljp-navigation-link pr-3 pb-3"><?php esc_html_e( 'Logout', DJP_DOMAIN ); ?></a>
+								<a href="<?php echo wp_logout_url( $wp->request ); ?>" class="wljp-navigation-link pr-3 pb-3"><?php esc_html_e( 'Logout', EJP_DOMAIN ); ?></a>
 							</div>
 							<?php else : ?>
 							<div class="col-sm-12 text-right wljp-login-signup-navigation wljp-navigation">
-								<a href="<?php echo esc_url($account_page_url); ?>" class="wljp-navigation-link pr-3 mb-3 border-bottom"><?php esc_html_e( 'Login / Signup', DJP_DOMAIN ); ?></a>
+								<a href="<?php echo esc_url($account_page_url); ?>" class="wljp-navigation-link pr-3 mb-3 border-bottom"><?php esc_html_e( 'Login / Signup', EJP_DOMAIN ); ?></a>
 							</div>
 							<?php endif; ?>
 			        	</div>

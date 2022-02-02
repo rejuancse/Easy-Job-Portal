@@ -10,7 +10,7 @@ if ( $employee ) :
 ?>
 	<header>
 		<div class="wljp-cv-heading card p-3 text-center">
-			<span><?php esc_html_e( 'Jobs Applied', DJP_DOMAIN ); ?></span>
+			<span><?php esc_html_e( 'Jobs Applied', EJP_DOMAIN ); ?></span>
 		</div>
 	</header>
 <?php
@@ -41,7 +41,7 @@ if ( $total ) :
 						echo '<input type="hidden" name="'. $name .'" value="'. $value .'">';
 					}
 				} ?>
-					<input type="text" name="search_job" class="wljp-search-job-input w-100 d-block col" placeholder="<?php esc_attr_e( "Search job title", DJP_DOMAIN ); ?>">
+					<input type="text" name="search_job" class="wljp-search-job-input w-100 d-block col" placeholder="<?php esc_attr_e( "Search job title", EJP_DOMAIN ); ?>">
 					<div class="input-group-append">
 						<button type="submit" class="wljp-search-button pt-2 pb-2"><i class="fa fa-search"></i></button>
 					</div>
@@ -50,8 +50,8 @@ if ( $total ) :
 			<?php
 			if ( ! empty( $search ) ) : ?>
 			<div class="wljp-search-info text-center mb-3">
-				<span><?php esc_html_e( "Showing search results for", DJP_DOMAIN ); ?>: <strong><?php echo esc_attr( $search ); ?></strong></span>&nbsp;
-				<span><a class="" href="<?php echo esc_url( $account_page_url ); ?>"><?php esc_html_e( "Clear filter", DJP_DOMAIN ); ?></a></span>
+				<span><?php esc_html_e( "Showing search results for", EJP_DOMAIN ); ?>: <strong><?php echo esc_attr( $search ); ?></strong></span>&nbsp;
+				<span><a class="" href="<?php echo esc_url( $account_page_url ); ?>"><?php esc_html_e( "Clear filter", EJP_DOMAIN ); ?></a></span>
 			</div>
 			<?php
 			endif; ?>
@@ -63,9 +63,9 @@ if ( $total ) :
 			<table class="table table-hover" id="wljp-job-application-table">
 				<thead>
 					<tr>
-						<th scope="col"><?php esc_html_e( 'S.No.', DJP_DOMAIN ); ?></th>
-						<th scope="col"><?php esc_html_e( 'Job', DJP_DOMAIN ); ?></th>
-						<th scope="col"><?php esc_html_e( 'Applied on', DJP_DOMAIN ); ?></th>
+						<th scope="col"><?php esc_html_e( 'S.No.', EJP_DOMAIN ); ?></th>
+						<th scope="col"><?php esc_html_e( 'Job', EJP_DOMAIN ); ?></th>
+						<th scope="col"><?php esc_html_e( 'Applied on', EJP_DOMAIN ); ?></th>
 					</tr>
 				</thead>
 				<tbody>
@@ -104,14 +104,14 @@ if ( $total ) :
 	<?php
 	else : ?>
 		<div class="alert alert-info text-center" role="alert">
-			<?php esc_html_e( 'You have not applied to any job.', DJP_DOMAIN ); ?>&nbsp;
-			<a href="<?php echo esc_url($job_portal_page_url); ?>"><?php esc_html_e( 'Browse Jobs', DJP_DOMAIN ); ?></a>
+			<?php esc_html_e( 'You have not applied to any job.', EJP_DOMAIN ); ?>&nbsp;
+			<a href="<?php echo esc_url($job_portal_page_url); ?>"><?php esc_html_e( 'Browse Jobs', EJP_DOMAIN ); ?></a>
 		</div>
 	<?php
 	endif;
 else : ?>
 	<div class="alert alert-info text-center float-left" role="alert">
-		<?php esc_html_e( 'Please register your CV before applying to jobs.', DJP_DOMAIN ); ?>
+		<?php esc_html_e( 'Please register your CV before applying to jobs.', EJP_DOMAIN ); ?>
 	</div>
 <?php
 endif; ?>

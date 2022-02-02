@@ -20,7 +20,7 @@ class WL_JP_User {
         wp_set_auth_cookie( $user->ID );
         do_action( 'wp_login', $user->user_login );
 
-		wp_send_json_success( array( 'message' => esc_html__( "You are logged in successfully.", DJP_DOMAIN ), 'reload' => true ) );
+		wp_send_json_success( array( 'message' => esc_html__( "You are logged in successfully.", EJP_DOMAIN ), 'reload' => true ) );
 	}
 
 	/* Signup */
@@ -37,27 +37,27 @@ class WL_JP_User {
 		/* Validations */
 		$errors = [];
 		if ( empty( $username ) ) {
-			$errors['username'] = esc_html__( 'Please provide username.', DJP_DOMAIN );
+			$errors['username'] = esc_html__( 'Please provide username.', EJP_DOMAIN );
 		}
 
 		if ( empty( $email ) ) {
-			$errors['email'] = esc_html__( 'Please provide email address.', DJP_DOMAIN );
+			$errors['email'] = esc_html__( 'Please provide email address.', EJP_DOMAIN );
 		}
 
 		if ( ! filter_var( $email, FILTER_VALIDATE_EMAIL ) ) {
-			$errors['email'] = esc_html__( 'Please provide a valid email address.', DJP_DOMAIN );
+			$errors['email'] = esc_html__( 'Please provide a valid email address.', EJP_DOMAIN );
 		}
 
 		if ( empty( $password ) ) {
-			$errors['password'] = esc_html__( 'Please provide password.', DJP_DOMAIN );
+			$errors['password'] = esc_html__( 'Please provide password.', EJP_DOMAIN );
 		}
 
 		if ( empty( $confirm_password ) ) {
-			$errors['password_confirm'] = esc_html__( 'Please confirm password.', DJP_DOMAIN );
+			$errors['password_confirm'] = esc_html__( 'Please confirm password.', EJP_DOMAIN );
 		}
 
 		if ( $password !== $confirm_password ) {
-			$errors['password'] = esc_html__( 'Passwords do not match.', DJP_DOMAIN );
+			$errors['password'] = esc_html__( 'Passwords do not match.', EJP_DOMAIN );
 		}
 		/* End validations */
 
@@ -79,7 +79,7 @@ class WL_JP_User {
 	        wp_set_auth_cookie( $user_id );
 	        do_action( 'wp_login', $username );
 
-			wp_send_json_success( array( 'message' => esc_html__( 'Thank you for signing up.', DJP_DOMAIN ), 'reload' => true ) );
+			wp_send_json_success( array( 'message' => esc_html__( 'Thank you for signing up.', EJP_DOMAIN ), 'reload' => true ) );
 		}
 		wp_send_json_error( $errors );
 	}
@@ -93,23 +93,23 @@ class WL_JP_User {
 		/* Validations */
 		$errors = [];
 		if ( empty( $email ) ) {
-			$errors['email'] = esc_html__( 'Please provide email address.', DJP_DOMAIN );
+			$errors['email'] = esc_html__( 'Please provide email address.', EJP_DOMAIN );
 		}
 
 		if ( ! filter_var( $email, FILTER_VALIDATE_EMAIL ) ) {
-			$errors['email'] = esc_html__( 'Please provide a valid email address.', DJP_DOMAIN );
+			$errors['email'] = esc_html__( 'Please provide a valid email address.', EJP_DOMAIN );
 		}
 
 		if ( empty( $password ) ) {
-			$errors['password'] = esc_html__( 'Please provide password.', DJP_DOMAIN );
+			$errors['password'] = esc_html__( 'Please provide password.', EJP_DOMAIN );
 		}
 
 		if ( empty( $confirm_password ) ) {
-			$errors['password_confirm'] = esc_html__( 'Please confirm password.', DJP_DOMAIN );
+			$errors['password_confirm'] = esc_html__( 'Please confirm password.', EJP_DOMAIN );
 		}
 
 		if ( $password !== $confirm_password ) {
-			$errors['password'] = esc_html__( 'Passwords do not match.', DJP_DOMAIN );
+			$errors['password'] = esc_html__( 'Passwords do not match.', EJP_DOMAIN );
 		}
 		/* End validations */
 
@@ -125,7 +125,7 @@ class WL_JP_User {
 				wp_send_json_error( $user_id->get_error_message() );
 			}
 
-			wp_send_json_success( array( 'message' => esc_html__( 'Account settings updated.', DJP_DOMAIN ) ) );
+			wp_send_json_success( array( 'message' => esc_html__( 'Account settings updated.', EJP_DOMAIN ) ) );
 		}
 		wp_send_json_error( $errors );
 	}

@@ -44,7 +44,7 @@ class WL_JP_Database {
 				'post_content'   => $page_content,
 				'post_date'      => date('Y-m-d H:i:s'),
 				'post_status'    => 'publish' ,
-				'post_title'     => esc_html__( 'Jobs', DJP_DOMAIN ),
+				'post_title'     => esc_html__( 'Jobs', EJP_DOMAIN ),
 				'post_type'      => 'page',
 			);  
 			$job_portal_page_id = wp_insert_post( $job_portal_page, false );
@@ -64,7 +64,7 @@ class WL_JP_Database {
 				'post_content'   => $page_content,
 				'post_date'      => date('Y-m-d H:i:s'),
 				'post_status'    => 'publish' ,
-				'post_title'     => esc_html__( 'Account', DJP_DOMAIN ),
+				'post_title'     => esc_html__( 'Account', EJP_DOMAIN ),
 				'post_type'      => 'page',
 			);
 			$account_page_id = wp_insert_post( $account_page, false );

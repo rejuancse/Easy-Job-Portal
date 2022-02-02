@@ -7,8 +7,8 @@ class WL_JP_Job {
 	 * @return void
 	 */
 	public static function add_meta_boxes() {
-	    add_meta_box( 'wljp_job_work_experience', esc_html__( 'Work Experience', DJP_DOMAIN ), array( 'WL_JP_Job', 'work_experience_html' ), 'job_listing', 'side' );
-	    add_meta_box( 'wljp_job_salary', esc_html__( 'Salary', DJP_DOMAIN ), array( 'WL_JP_Job', 'job_salary_html' ), 'job_listing', 'advanced' );
+	    add_meta_box( 'wljp_job_work_experience', esc_html__( 'Work Experience', EJP_DOMAIN ), array( 'WL_JP_Job', 'work_experience_html' ), 'job_listing', 'side' );
+	    add_meta_box( 'wljp_job_salary', esc_html__( 'Salary', EJP_DOMAIN ), array( 'WL_JP_Job', 'job_salary_html' ), 'job_listing', 'advanced' );
 	}
 
 	/**
@@ -25,12 +25,12 @@ class WL_JP_Job {
 		<?php wp_nonce_field( 'save_job_meta', 'job_meta' ); ?>
 		<div class="wljp" id="wljp_job_work_experience">
 			<div class="mb-2">
-				<label for="wljp_job_work_experience_minimum"><?php esc_html_e( 'Minimum Years', DJP_DOMAIN ); ?>:</label>
+				<label for="wljp_job_work_experience_minimum"><?php esc_html_e( 'Minimum Years', EJP_DOMAIN ); ?>:</label>
 				<input type="number" name="job_work_experience_minimum" id="wljp_job_work_experience_minimum" class="widefat required" value="<?php echo esc_attr( $minimum ); ?>">
 			</div>
 
 			<div class="mt-2">
-				<label for="wljp_job_work_experience_maximum"><?php esc_html_e( 'Maximum Years', DJP_DOMAIN ); ?>:</label>
+				<label for="wljp_job_work_experience_maximum"><?php esc_html_e( 'Maximum Years', EJP_DOMAIN ); ?>:</label>
 				<input type="number" name="job_work_experience_maximum" id="wljp_job_work_experience_maximum" class="widefat required" value="<?php echo esc_attr( $maximum ); ?>">
 			</div>
 		</div>
@@ -56,29 +56,29 @@ class WL_JP_Job {
 		<div class="wljp" id="wljp_job_salary">
 			<div class="form-check form-check-inline">
 				<input <?php echo ! isset( $unspecified ) ? 'checked' : checked( $type, 'unspecified', false ); ?> class="form-check-input" type="radio" name="wljp_job_salary" id="wljp-job-salary-unspecified" value="unspecified">
-				<label class="form-check-label" for="wljp-job-salary-unspecified"><?php esc_html_e( 'Unspecified', DJP_DOMAIN ); ?></label>
+				<label class="form-check-label" for="wljp-job-salary-unspecified"><?php esc_html_e( 'Unspecified', EJP_DOMAIN ); ?></label>
 			</div>
 			<div class="form-check form-check-inline">
 				<input <?php checked( $type, 'negotiable', true ); ?> class="form-check-input" type="radio" name="wljp_job_salary" id="wljp-job-salary-negotiable" value="negotiable">
-				<label class="form-check-label" for="wljp-job-salary-negotiable"><?php esc_html_e( 'Negotiable', DJP_DOMAIN ); ?></label>
+				<label class="form-check-label" for="wljp-job-salary-negotiable"><?php esc_html_e( 'Negotiable', EJP_DOMAIN ); ?></label>
 			</div>
 			<div class="form-check form-check-inline">
 				<input <?php checked( $type, 'fixed', true ); ?> class="form-check-input" type="radio" name="wljp_job_salary" id="wljp-job-salary-fixed" value="fixed">
-				<label class="form-check-label" for="wljp-job-salary-fixed"><?php esc_html_e( 'Fixed', DJP_DOMAIN ); ?></label>
+				<label class="form-check-label" for="wljp-job-salary-fixed"><?php esc_html_e( 'Fixed', EJP_DOMAIN ); ?></label>
 			</div>
 			<div class="form-check form-check-inline">
 				<input <?php checked( $type, 'range', true ); ?> class="form-check-input" type="radio" name="wljp_job_salary" id="wljp-job-salary-range" value="range">
-				<label class="form-check-label" for="wljp-job-salary-range"><?php esc_html_e( 'Range', DJP_DOMAIN ); ?></label>
+				<label class="form-check-label" for="wljp-job-salary-range"><?php esc_html_e( 'Range', EJP_DOMAIN ); ?></label>
 			</div>
 
 			<div class="wljp_job_salary">
 				<div class="row mt-2">
 					<div class="col-md-4 col-sm-6">
-						<label for="wljp_job_salary_minimum"><?php esc_html_e( 'Minimum Salary', DJP_DOMAIN ); ?>:</label>
+						<label for="wljp_job_salary_minimum"><?php esc_html_e( 'Minimum Salary', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="wljp_job_salary_minimum" id="wljp_job_salary_minimum" class="widefat" <?php if ( $is_range ) { echo "value='{$minimum}'"; } ?>>
 					</div>  
 					<div class="col-md-4 col-sm-6">
-						<label for="wljp_job_salary_maximum"><?php esc_html_e( 'Maximum Salary', DJP_DOMAIN ); ?>:</label>
+						<label for="wljp_job_salary_maximum"><?php esc_html_e( 'Maximum Salary', EJP_DOMAIN ); ?>:</label>
 						<input type="text" name="wljp_job_salary_maximum" id="wljp_job_salary_maximum" class="widefat" <?php if ( $is_range ) { echo "value='{$maximum}'"; } ?>>
 					</div>
 				</div>

@@ -36,9 +36,9 @@ do_action( 'single_job_listing_meta_before' ); ?>
 			$maximum_salary = isset( $salary['maximum'] ) ? esc_attr( $salary['maximum'] ) : '';
 			$salary  = "{$minimum_salary} - $maximum_salary";
 		} elseif ( $type == 'negotiable' ) {
-			$salary = esc_html__( 'Negotiable', DJP_DOMAIN );
+			$salary = esc_html__( 'Negotiable', EJP_DOMAIN );
 		} elseif ( $type == 'fixed' ) {
-			$salary = esc_html__( 'Fixed', DJP_DOMAIN );
+			$salary = esc_html__( 'Fixed', EJP_DOMAIN );
 		} else {
 			$salary = '';
 		}
@@ -47,15 +47,15 @@ do_action( 'single_job_listing_meta_before' ); ?>
 
 	<?php if ( $minimum_work_experience && $maximum_work_experience ) { ?>
     	<li class="wljp-experience">
-			<i class="fa fa-briefcase"></i>&nbsp; <?php echo "{$minimum_work_experience} - {$maximum_work_experience} " . esc_html__( 'Yr', DJP_DOMAIN ); ?>
+			<i class="fa fa-briefcase"></i>&nbsp; <?php echo "{$minimum_work_experience} - {$maximum_work_experience} " . esc_html__( 'Yr', EJP_DOMAIN ); ?>
 		</li>
     <?php } elseif( $minimum_work_experience ) { ?>
     	<li class="wljp-experience">
-			<i class="fa fa-briefcase"></i>&nbsp; <?php echo "{$minimum_work_experience} " . esc_html__( 'Yr', DJP_DOMAIN ); ?>
+			<i class="fa fa-briefcase"></i>&nbsp; <?php echo "{$minimum_work_experience} " . esc_html__( 'Yr', EJP_DOMAIN ); ?>
 		</li>
 	<?php } elseif ( $maximum_work_experience ) { ?>
     	<li class="wljp-experience">
-			<i class="fa fa-briefcase"></i>&nbsp; <?php echo "{$maximum_work_experience} " . esc_html__( 'Yr', DJP_DOMAIN ); ?>
+			<i class="fa fa-briefcase"></i>&nbsp; <?php echo "{$maximum_work_experience} " . esc_html__( 'Yr', EJP_DOMAIN ); ?>
 		</li>
 	<?php }
 	

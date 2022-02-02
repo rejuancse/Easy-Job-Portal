@@ -16,76 +16,76 @@ class WL_JP_Helper {
 
 	public static function get_gender_list() {
 		return array(
-			''       => esc_html__( 'Unspecified', DJP_DOMAIN ),
-			'male'   => esc_html__( 'Male', DJP_DOMAIN ),
-			'female' => esc_html__( 'Female', DJP_DOMAIN )
+			''       => esc_html__( 'Unspecified', EJP_DOMAIN ),
+			'male'   => esc_html__( 'Male', EJP_DOMAIN ),
+			'female' => esc_html__( 'Female', EJP_DOMAIN )
 		);
 	}
 
 	public static function total_experience_years() {
 		return array(
-			''   => esc_html__( 'Unspecified', DJP_DOMAIN ),
-			'0'  => sprintf( esc_html__( '%d Yr', DJP_DOMAIN ), 0 ),
-			'1'  => sprintf( esc_html__( '%d Yr', DJP_DOMAIN ), 1 ),
-			'2'  => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 2 ),
-			'3'  => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 3 ),
-			'4'  => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 4 ),
-			'5'  => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 5 ),
-			'6'  => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 6 ),
-			'7'  => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 7 ),
-			'8'  => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 8 ),
-			'9'  => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 9 ),
-			'10' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 10 ),
-			'11' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 11 ),
-			'12' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 12 ),
-			'13' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 13 ),
-			'14' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 14 ),
-			'15' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 15 ),
-			'16' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 16 ),
-			'17' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 17 ),
-			'18' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 18 ),
-			'19' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 19 ),
-			'20' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 20 ),
-			'21' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 21 ),
-			'22' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 22 ),
-			'23' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 23 ),
-			'24' => sprintf( esc_html__( '%d Yrs', DJP_DOMAIN ), 24 ),
-			'25' => sprintf( esc_html__( '> %d Yrs', DJP_DOMAIN ), 25 )
+			''   => esc_html__( 'Unspecified', EJP_DOMAIN ),
+			'0'  => sprintf( esc_html__( '%d Yr', EJP_DOMAIN ), 0 ),
+			'1'  => sprintf( esc_html__( '%d Yr', EJP_DOMAIN ), 1 ),
+			'2'  => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 2 ),
+			'3'  => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 3 ),
+			'4'  => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 4 ),
+			'5'  => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 5 ),
+			'6'  => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 6 ),
+			'7'  => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 7 ),
+			'8'  => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 8 ),
+			'9'  => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 9 ),
+			'10' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 10 ),
+			'11' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 11 ),
+			'12' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 12 ),
+			'13' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 13 ),
+			'14' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 14 ),
+			'15' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 15 ),
+			'16' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 16 ),
+			'17' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 17 ),
+			'18' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 18 ),
+			'19' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 19 ),
+			'20' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 20 ),
+			'21' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 21 ),
+			'22' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 22 ),
+			'23' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 23 ),
+			'24' => sprintf( esc_html__( '%d Yrs', EJP_DOMAIN ), 24 ),
+			'25' => sprintf( esc_html__( '> %d Yrs', EJP_DOMAIN ), 25 )
 		);
 	}
 
 	public static function total_experience_months() {
 		return array(
-			''   => esc_html__( 'Unspecified', DJP_DOMAIN ),
-			'0'  => sprintf( esc_html__( '%d Month', DJP_DOMAIN ), 0 ),
-			'1'  => sprintf( esc_html__( '%d Month', DJP_DOMAIN ), 1 ),
-			'2'  => sprintf( esc_html__( '%d Months', DJP_DOMAIN ), 2 ),
-			'3'  => sprintf( esc_html__( '%d Months', DJP_DOMAIN ), 3 ),
-			'4'  => sprintf( esc_html__( '%d Months', DJP_DOMAIN ), 4 ),
-			'5'  => sprintf( esc_html__( '%d Months', DJP_DOMAIN ), 5 ),
-			'6'  => sprintf( esc_html__( '%d Months', DJP_DOMAIN ), 6 ),
-			'7'  => sprintf( esc_html__( '%d Months', DJP_DOMAIN ), 7 ),
-			'8'  => sprintf( esc_html__( '%d Months', DJP_DOMAIN ), 8 ),
-			'9'  => sprintf( esc_html__( '%d Months', DJP_DOMAIN ), 9 ),
-			'10' => sprintf( esc_html__( '%d Months', DJP_DOMAIN ), 10 ),
-			'11' => sprintf( esc_html__( '%d Months', DJP_DOMAIN ), 11 )
+			''   => esc_html__( 'Unspecified', EJP_DOMAIN ),
+			'0'  => sprintf( esc_html__( '%d Month', EJP_DOMAIN ), 0 ),
+			'1'  => sprintf( esc_html__( '%d Month', EJP_DOMAIN ), 1 ),
+			'2'  => sprintf( esc_html__( '%d Months', EJP_DOMAIN ), 2 ),
+			'3'  => sprintf( esc_html__( '%d Months', EJP_DOMAIN ), 3 ),
+			'4'  => sprintf( esc_html__( '%d Months', EJP_DOMAIN ), 4 ),
+			'5'  => sprintf( esc_html__( '%d Months', EJP_DOMAIN ), 5 ),
+			'6'  => sprintf( esc_html__( '%d Months', EJP_DOMAIN ), 6 ),
+			'7'  => sprintf( esc_html__( '%d Months', EJP_DOMAIN ), 7 ),
+			'8'  => sprintf( esc_html__( '%d Months', EJP_DOMAIN ), 8 ),
+			'9'  => sprintf( esc_html__( '%d Months', EJP_DOMAIN ), 9 ),
+			'10' => sprintf( esc_html__( '%d Months', EJP_DOMAIN ), 10 ),
+			'11' => sprintf( esc_html__( '%d Months', EJP_DOMAIN ), 11 )
 		);
 	}
 
 	public static function notice_period_list() {
 		return array(
-			''        => esc_html__( 'Unspecified', DJP_DOMAIN ),
-			'0-week'  => sprintf( esc_html__( '< %d week', DJP_DOMAIN ), 1 ),
-			'1-week'  => sprintf( esc_html__( '%d week', DJP_DOMAIN ), 1 ),
-			'2-week'  => sprintf( esc_html__( '%d weeks', DJP_DOMAIN ), 2 ),
-			'3-week'  => sprintf( esc_html__( '%d weeks', DJP_DOMAIN ), 3 ),
-			'4-week'  => sprintf( esc_html__( '%d weeks', DJP_DOMAIN ), 4 ),
-			'5-week'  => sprintf( esc_html__( '%d weeks', DJP_DOMAIN ), 5 ),
-			'6-week'  => sprintf( esc_html__( '%d weeks', DJP_DOMAIN ), 6 ),
-			'7-week'  => sprintf( esc_html__( '%d weeks', DJP_DOMAIN ), 7 ),
-			'2-month' => sprintf( esc_html__( '%d month', DJP_DOMAIN ), 2 ),
-			'3-month' => sprintf( esc_html__( '%d months', DJP_DOMAIN ), 3 ),
-			'current' => esc_html__( 'Currently Serving Notice Period', DJP_DOMAIN )
+			''        => esc_html__( 'Unspecified', EJP_DOMAIN ),
+			'0-week'  => sprintf( esc_html__( '< %d week', EJP_DOMAIN ), 1 ),
+			'1-week'  => sprintf( esc_html__( '%d week', EJP_DOMAIN ), 1 ),
+			'2-week'  => sprintf( esc_html__( '%d weeks', EJP_DOMAIN ), 2 ),
+			'3-week'  => sprintf( esc_html__( '%d weeks', EJP_DOMAIN ), 3 ),
+			'4-week'  => sprintf( esc_html__( '%d weeks', EJP_DOMAIN ), 4 ),
+			'5-week'  => sprintf( esc_html__( '%d weeks', EJP_DOMAIN ), 5 ),
+			'6-week'  => sprintf( esc_html__( '%d weeks', EJP_DOMAIN ), 6 ),
+			'7-week'  => sprintf( esc_html__( '%d weeks', EJP_DOMAIN ), 7 ),
+			'2-month' => sprintf( esc_html__( '%d month', EJP_DOMAIN ), 2 ),
+			'3-month' => sprintf( esc_html__( '%d months', EJP_DOMAIN ), 3 ),
+			'current' => esc_html__( 'Currently Serving Notice Period', EJP_DOMAIN )
 		);
 	}
 
@@ -98,7 +98,7 @@ class WL_JP_Helper {
 	}
 
 	public static function job_types() {
-		return array( '' => esc_html__( 'Unspecified', DJP_DOMAIN ) ) + get_terms( array( 
+		return array( '' => esc_html__( 'Unspecified', EJP_DOMAIN ) ) + get_terms( array( 
 		    'taxonomy' => 'job_listing_type',
 		    'fields'   => 'id=>name'
 		) );
@@ -106,11 +106,11 @@ class WL_JP_Helper {
 
 	public static function course_types() {
 		return array(
-			'full-time'      => esc_html__( 'Full Time', DJP_DOMAIN ),
-			'part-time'      => esc_html__( 'Part Time', DJP_DOMAIN ),
-			'freelance'      => esc_html__( 'Freelance', DJP_DOMAIN ),
-			'internship'      => esc_html__( 'Internship', DJP_DOMAIN ),
-			'temporary' 	=> esc_html__( 'Temporary', DJP_DOMAIN )
+			'full-time'      => esc_html__( 'Full Time', EJP_DOMAIN ),
+			'part-time'      => esc_html__( 'Part Time', EJP_DOMAIN ),
+			'freelance'      => esc_html__( 'Freelance', EJP_DOMAIN ),
+			'internship'      => esc_html__( 'Internship', EJP_DOMAIN ),
+			'temporary' 	=> esc_html__( 'Temporary', EJP_DOMAIN )
 		);
 	}
 
