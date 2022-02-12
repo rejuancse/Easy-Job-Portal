@@ -841,7 +841,7 @@ class Easy_Job_Portal_Post_Types {
 	}
 
 	public function maybe_generate_geolocation_data( $meta_id, $object_id, $meta_key, $meta_value ) {
-		_deprecated_function( __METHOD__, '1.19.1', 'Easy_Job_Portal_Post_Types::maybe_update_geolocation_data' );
+		_deprecated_function( __METHOD__, '1.0.0', 'Easy_Job_Portal_Post_Types::maybe_update_geolocation_data' );
 		$this->maybe_update_geolocation_data( $meta_id, $object_id, $meta_key, $meta_value );
 	}
 
@@ -906,7 +906,7 @@ class Easy_Job_Portal_Post_Types {
 			return;
 		}
 
-		wp_no_robots();
+		// wp_no_robots();
 		// wp_robots_no_robots();
 	}
 

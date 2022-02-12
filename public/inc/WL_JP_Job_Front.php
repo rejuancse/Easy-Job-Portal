@@ -52,14 +52,8 @@ class WL_JP_Job_Front {
 		wp_enqueue_script( 'wljp-public-js', EASY_JOB_PORTAL_PLUGIN_URL . 'assets/js/wljp-public.js', array( 'jquery' ), true, true );
 		wp_enqueue_script( 'wljp-public-ajax-js', EASY_JOB_PORTAL_PLUGIN_URL . 'assets/js/wljp-public-ajax.js', array( 'jquery' ), true, true );
 		wp_localize_script( 'wljp-public-ajax-js', 'WLJPAjax', array( 'security' => wp_create_nonce( 'wljp' ) ) );
-
-		wp_localize_script( 'wljp-public-ajax-js', 'wljpajaxurl', array(
-			'ajaxurl' => admin_url( 'admin-post.php' ),
-		) );
-		
-		wp_localize_script( 'wljp-public-ajax-js', 'WLJPAdminUrl', array(
-			'ajaxurl' => admin_url(),
-		) );
+		wp_localize_script( 'wljp-public-ajax-js', 'wljpajaxurl', array( esc_url( admin_url( 'admin-post.php' ) ) ) );
+		wp_localize_script( 'wljp-public-ajax-js', 'WLJPAdminUrl', array( admin_url() ) );
 
 	}
 }
