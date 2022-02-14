@@ -8,29 +8,22 @@ Stable tag:  1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Powerful & robust plugin to create a job Portal on your website in a Easy & elegant way.
+Powerful & robust plugin to create a Job Portal on your website in a Easy & elegant way.
 
 == Description ==
 Add an easy modern Job Portal to your website. Display job listings and allow employers to submit and manage jobs all from the front-end.
 
 = Looking for an easy, user-friendly and robust Job Portal plugin? = 
-Easy Job Portal by <a href="https://www.presstigers.com">PressTigers</a> is an easy, light weight plugin that adds a job Portal to your WordPress website. 
+Easy Job Portal is light weight plugin that adds a job Portal to your WordPress website. 
 This plugin is extendible and easy to use. A customized job Portal is created to manage various job offers via Wordpress with the Easy Job Portal. You can add multiple job listings and can show them on any page by inserting [easyjobpost] shortcode. You can add multiple job features and customized application forms for every distinct job listing. You can also add notes to an application right from the dashPortal.
 
-= Shortcode =
-` [easyjobpost] `
 
-= Live Demo =
-Please click here for [Easy Job Portal Demo](https://easyjobportal.com).
+= Easy Job Portal Shortcodes =
 
-= Product Tour =
+* [submit_job_form] 
+* [job_dashboard] 
+* [jobs] 
 
-You can have a hand's on experience of SJB on our "demo site" and you can also review the video tutorial below on how you can install & configure the SJB plugin on your own website.
-
-
-= Easy Job Portal Add-ons =
-
-* 
 
 = Plugin Features =
 
@@ -47,13 +40,6 @@ You can have a hand's on experience of SJB on our "demo site" and you can also r
 *  Set job listing, job features, application form, filters and email notifications for a job through global settings.
 *  Compatible with WPML since SJB version 2.9.0 
 
-For more plugin documentation, see [other notes](https://wordpress.org/plugins/easy-job-portal/other_notes) section.
-
-= Can you contribute? =
-If you are an awesome contributor for translations or plugin development, please contact us at support@presstigers.com
-
-== Credits ==
-* 
 
 == Configurations & Templating ==
 
@@ -69,12 +55,12 @@ If you are an awesome contributor for translations or plugin development, please
 The job Portal templating feature allows you to change the following file templates. We are providing two UI layouts named as Classical and Modern.
 
 1. For modifying classical layout templates, please refer to v1 directory.
-1. For modifying modern layout templates, please refer to v2 directory.
+2. For modifying modern layout templates, please refer to v2 directory.
 
 
 
-1. To change a template, please add "Easy_job_Portal" folder in your activated theme's root directory.
-1. Add above mentioned file from plugin Easy-job-Portal >templates folder keeping the same file directory structure and do whatever you want.
+1. To change a template, please add "Easy Job Portal" folder in your activated theme's root directory.
+2. Add above mentioned file from plugin Easy-job-Portal >templates folder keeping the same file directory structure and do whatever you want.
 
 Enjoy your work with Easy Job Portal templating.
 
@@ -127,7 +113,15 @@ You can visit <a href="#">WPQXTHEME Website</a> or <a href="#">blog</a> page.
 
 == Screenshots ==
 
-1. 
+1. Job Listing
+2. Job Board
+3. Job Applications
+4. Job Post
 
-== Changelog ==
+= 1.0.0 [14/02/2022] =
 
+* Initial version released
+
+== Upgrade Notice ==
+
+Nothing here
